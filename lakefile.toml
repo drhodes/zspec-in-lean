@@ -1,0 +1,10 @@
+name = "zspec"
+version = "0.1.0"
+defaultTargets = ["zspec"]
+
+[[lean_lib]]
+name = "Zspec"
+
+[[lean_exe]]
+name = "zspec"
+root = "Main"
