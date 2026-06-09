@@ -348,7 +348,7 @@ wheels = [
 [[package]]
 name = "libspec"
 version = "9.0.0"
-source = { directory = "../../libspec" }
+source = { editable = "../libspec" }
 dependencies = [
     { name = "aiofiles" },
     { name = "click" },
@@ -1024,5 +1024,13 @@ dependencies = [
     { name = "libspec" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "libspec" },
+]
+
 [package.metadata]
-requires-dist = [{ name = "libspec", directory = "../../libspec" }]
+requires-dist = [{ name = "libspec", editable = "../libspec" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "libspec", editable = "../libspec" }]
